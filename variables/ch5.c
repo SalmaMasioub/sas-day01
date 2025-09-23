@@ -1,12 +1,21 @@
-// Challenge 5 : Affichage Température
+#include<stdio.h>
+    int main(){
 
-#include <stdio.h>
-int main(){
-float c;
-printf("entrer la temperature en c°: ")
-scanf("%f" , &c )
-if(c > 0 && c <= 100){
-printf("")
-}
-else
-}
+       float C ;
+
+       printf("Entrer la temperature en Celusius:") ;
+       scanf("%f",&C);
+
+       if (C >= 0 && C < 100){
+            printf("Liquide");
+        }else if (C >= 100){
+                printf("gaz");
+        }else { 
+                printf("solide");
+        }
+
+
+        
+        return 0;
+
+    }
